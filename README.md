@@ -9,10 +9,15 @@ Used to send notifications to the Discord webhook if a Windows service is stoppe
 
 The services section is - on the left the name of the service, on the right its displayed name:
 $services = @{
+
     "W32Time" = "Usluga czasu systemu Windows"
+    
     "Spooler" = "Bufor wydruku"
+    
     "wuauserv" = "Usluga Windows Update"
+    
 }
+
 
 The time at which the service is checked can be found at the end of the script (default 60 seconds):
 Start-Sleep -Seconds 60
